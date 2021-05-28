@@ -7,6 +7,9 @@
 - Ability to highlight an entry with an asterisk (mark as important)
 - Filter posts by likes / by all posts (implemented dynamically, i.e. the ability to add new buttons to filter and post new types and filter by them)
 
+#### You can check the operation of the application at: **https://show-item.ru/**
+Unless, of course, a new application will be tested there by this time :)
+
 ## Available Scripts
 
 In the project directory, you can run:
