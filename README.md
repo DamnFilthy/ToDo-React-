@@ -5,7 +5,7 @@
 - Adding new / removing old
 - Ability to like posts (by clicking on the span, well, on the words of the post)
 - Ability to highlight an entry with an asterisk (mark as important)
-- Filter posts by likes / by all posts (implemented dynamically, i.e. the ability to add new buttons to sort and write new types and sort by them)
+- Filter posts by likes / by all posts (implemented dynamically, i.e. the ability to add new buttons to filter and post new types and filter by them)
 
 ## Available Scripts
 
