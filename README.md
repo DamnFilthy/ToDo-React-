@@ -7,6 +7,14 @@
 - Ability to highlight an entry with an asterisk (mark as important)
 - Filter posts by likes / by all posts (implemented dynamically, i.e. the ability to add new buttons to filter and post new types and filter by them)
 
+### Update of 30.05.2021:
+
+So the list of changes:
+1. - A small redesign, bringing the app to life with the simplest animations.
+2. - Added automatic generation and saving of the post date.
+3. - Added the ability to sort entries by date - for the current day, the current week, the current month and older than the month.
+4. - Sorting works in conjunction with filtering, you can sort entries for a week and filter them by likes or other available criteria.
+
 #### You can check the operation of the application at: **https://show-item.ru/**
 Unless, of course, a new application will be tested there by this time :)
 
