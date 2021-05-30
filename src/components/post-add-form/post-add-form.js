@@ -14,11 +14,12 @@ export default class PostAddForm extends React.Component{
         this.onValueChange = (e) => {
            this.setState({
                text: e.target.value
+               
            })
         }
         this.onSubmit = (e) => {
             e.preventDefault()
-            this.props.onAdd(this.state.text)
+            this.props.onAdd(this.state.text + ' ')
             this.setState({
                 text: ''
             })

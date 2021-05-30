@@ -5,12 +5,28 @@
 
 
 .app-header h1 {
-  /* width: 150px;
-  height: 150px; */
-  font-size: 26px;
+  font-size: 37px;
+  margin-bottom: 40px;
 }
 
-.app-header h2 {
-  font-size: 1.2rem;
-  color: rgb(10, 9, 9);
+
+.header__stats {
+  font-size: 22px;
+  color: #795353;
+}
+
+.dinamic-stat-all {
+  color: rgb(230, 231, 210);
+}
+
+.dinamic-stat-like {
+  color: rgb(192, 84, 84);
+}
+
+.dinamic-stat-important {
+  color: rgb(226, 241, 16);
+}
+
+.dinamic-stat-done {
+  color: rgb(136, 255, 0);
 }

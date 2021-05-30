@@ -3,31 +3,9 @@ import React from 'react'
 
 
 export default class PostListItem extends React.Component {
-
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         important: false,
-    //         like: false
-    //     }
-
-    //     this.onImportant = () => {
-    //         this.setState(({important}) => ({
-    //             important: !important
-    //         }))
-    //     }
-
-    //     this.onLike = () => {
-    //         this.setState(({like}) => ({
-    //             like: !like
-    //         }))
-    //     }
-
-    // }
-
     render(){
         
-        const {label, onDelete, onToggleImportant, onToggleLiked, important, like} = this.props;
+        const {label, onDelete, onToggleImportant, onToggleLiked, onToggleDone, important, like, done, date} = this.props;
 
         let classNames = 'app-list-item d-flex justify-content-between';
         
@@ -37,6 +15,9 @@ export default class PostListItem extends React.Component {
         if (like){
             classNames += ' like';
         }
+        if (done){
+            classNames += ' done';
+        }
 
         return (
                 <div
@@ -44,9 +25,17 @@ export default class PostListItem extends React.Component {
                  <span onClick={onToggleLiked}
                  className="app-list-item-label">
                     {label}
+                    {date}
                     </span>
                     <div className="d-flex justify-content-center  align-items-center">
-                    
+
+                    <button 
+                    onClick={onToggleDone}
+                    type="button" 
+                    className="btn-done btn-sm">
+                        <i className="fas fa-check"></i>
+                    </button>
+                        
                     <button 
                     onClick={onToggleImportant}
                     type="button" 

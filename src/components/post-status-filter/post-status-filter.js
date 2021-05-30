@@ -9,6 +9,8 @@ export default class PostStatusFilter extends React.Component{
     this.buttons = [
       {name: 'all', label: 'Все'},
       {name: 'like', label: 'Понравилось'},
+      {name: 'important', label: 'Важные'},
+      {name: 'done', label: 'Выполнено'}
     ]
   }
 
@@ -18,7 +20,7 @@ export default class PostStatusFilter extends React.Component{
         const classActive = active ? 'btn-info' : 'btn-outline-secondary'
         return (
           <button
-            onClick={ () => this.props.onFIlterSelect(name) }
+            onClick={ () => this.props.onFilterSelect(name) }
             key={name} 
             type="button" 
             className={`btn ${classActive}`}>{label}

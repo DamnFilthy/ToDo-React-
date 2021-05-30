@@ -4,7 +4,7 @@ import PostListItem from '../../components/post-list-item/post-list-item'
 
 
 
-function PostList({posts, onDelete, onToggleImportant, onToggleLiked}) {
+function PostList({posts, onDelete, onToggleImportant, onToggleLiked, onToggleDone}) {
 
     const elements = posts.map((item) => {
         const {id, ...itemProps} = item;
@@ -15,6 +15,7 @@ function PostList({posts, onDelete, onToggleImportant, onToggleLiked}) {
                     onDelete = { () => onDelete(id)}
                     onToggleImportant = { () => onToggleImportant(id)}
                     onToggleLiked = { () => onToggleLiked(id)}
+                    onToggleDone = { () => onToggleDone(id)}
                 />
             </li>
         );
